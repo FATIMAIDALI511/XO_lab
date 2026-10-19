@@ -1,0 +1,14 @@
+:root { font-family: Arial, sans-serif; color: #172554; background: #eff6ff; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; display: grid; place-items: center; margin: 0; padding: 24px; }
+.jeu { width: min(100%, 460px); background: white; border-radius: 22px; padding: 32px; text-align: center; box-shadow: 0 20px 55px #1e3a8a20; }
+.etiquette { color: #2563eb; text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: bold; }
+h1 { font-size: 28px; margin: 10px 0; } h1 span { color: #e11d48; }
+.introduction, .astuce { color: #64748b; }
+.message { background: #dbeafe; color: #1d4ed8; border-radius: 10px; padding: 12px; font-weight: bold; }
+.grille { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 24px auto; }
+.case { aspect-ratio: 1; border: 2px solid #bfdbfe; border-radius: 14px; background: #f8fafc; color: #2563eb; font-size: clamp(32px, 8vw, 56px); font-weight: bold; cursor: pointer; }
+.case:hover { background: #dbeafe; } .case.o { color: #e11d48; }
+.case:focus-visible, .rejouer:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+.rejouer { background: #1d4ed8; color: white; border: 0; border-radius: 10px; padding: 13px 28px; font-weight: bold; cursor: pointer; }
+.rejouer:hover { background: #1e40af; }

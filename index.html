@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XO Lab - Mon premier jeu JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="jeu">
+    <p class="etiquette">YouCode · LAB JavaScript</p>
+    <h1>Jeu du morpion <span>XO</span></h1>
+    <p class="introduction">Deux joueurs, neuf cases, un gagnant !</p>
+    <p id="message" class="message" aria-live="polite">Au tour du joueur X</p>
+    <div id="grille" class="grille" aria-label="Grille de morpion">
+      <button class="case" data-index="0" aria-label="Case 1"></button>
+      <button class="case" data-index="1" aria-label="Case 2"></button>
+      <button class="case" data-index="2" aria-label="Case 3"></button>
+      <button class="case" data-index="3" aria-label="Case 4"></button>
+      <button class="case" data-index="4" aria-label="Case 5"></button>
+      <button class="case" data-index="5" aria-label="Case 6"></button>
+      <button class="case" data-index="6" aria-label="Case 7"></button>
+      <button class="case" data-index="7" aria-label="Case 8"></button>
+      <button class="case" data-index="8" aria-label="Case 9"></button>
+    </div>
+    <button id="rejouer" class="rejouer">Rejouer</button>
+    <p class="astuce">Clique sur une case pour jouer.</p>
+  </main>
+</body>
+</html>
